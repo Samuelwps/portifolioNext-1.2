@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { Container } from '../styles/pages/Home'
 
 import {AboutMe} from "../components/About/index"
+import {Projects} from "../components/Projects/index"
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       </Head>
       <main>
         <AboutMe/>
+        <Projects/>
       </main>
     </Container>
   )
