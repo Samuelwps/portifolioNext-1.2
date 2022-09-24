@@ -4,8 +4,6 @@ export const Container = styled.div`
   max-width: 1440px;
   height: 100vh;
 
-  margin:50px;
-
   display: block;
   justify-content: center;
   align-items: center;
