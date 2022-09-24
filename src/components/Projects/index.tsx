@@ -65,14 +65,14 @@ export function Projects() {
           </ImgDiv>
         </ListProjectsRev>
 
-        <DivCSS>
+        {/* <DivCSS>
           <ButtonAco onClick={() =>  content?(setContent(false)):(setContent(true))}>
             <Arrows content={content}>
             <a onClick={() =>  content?(setContent(false)):(setContent(true))}><img src="/images/chevrons-right.svg" /></a>
             </Arrows>
             <h4>Conceitos com CSS</h4>
           </ButtonAco>
-        </DivCSS>
+        </DivCSS> */}
 
         </section>
       </DivForWorks>

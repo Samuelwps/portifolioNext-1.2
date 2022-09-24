@@ -8,7 +8,7 @@ display:flex;
 flex-direction:row;
 justify-content:space-around;
 
-padding: 6.5rem 0rem 0rem 0rem;
+padding: 2.5rem 0rem 0rem 0rem;
 
 @media screen and (max-width:940px){
   flex-direction:column;

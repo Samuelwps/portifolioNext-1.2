@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import { Container } from '../styles/pages/Home'
 
+import {Headers} from "../components/Headers/index"
 import {AboutMe} from "../components/About/index"
 import {Projects} from "../components/Projects/index"
 
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
         <title>Homepage</title>
       </Head>
       <main>
+        <Headers/>
         <AboutMe/>
         <Projects/>
       </main>

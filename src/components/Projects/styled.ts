@@ -2,21 +2,20 @@ import styled, { css } from "styled-components";
 
 
 export const Container = styled.section`
-max-width:1440px;
+width:100%;
 margin:0 auto;
+margin-top: 100px;
 `;
 
 export const DivForWorks = styled.div`
-display:flex;
-width: 100%;
-justify-content:center;
-margin:2rem;
-flex-direction:row;
-justify-content:space-around;
+  display: flex;
+  width:100%;
+  justify-content:center;
+  justify-content: space-around;
 
-padding: 6.5rem 0rem 3rem 0rem;
+  padding: 6.5rem 0rem 3rem 0rem;
 
-border-top:1px solid var(--gray-800);
+  border-top:1px solid var(--gray-800)
 `;
 
 export const ButtonAco = styled.button`
@@ -160,9 +159,12 @@ export const DivDescription = styled.div`
 `
 
 export const ListProjectsRev = styled.div`
-  padding:1rem;
-  max-width: 50rem;
+  margin:1rem;
+
+  width: 100%;
+
   display:flex;
+  flex-direction: row;
 
   @media screen and (max-width:1180px){
     flex-direction: column-reverse;
@@ -174,9 +176,10 @@ export const ListProjectsRev = styled.div`
 export const ListProjects = styled.div`
   margin:1rem;
 
-  max-width: 50rem;
+  width: 100%;
 
   display:flex;
+  flex-direction: row;
 
   @media screen and (max-width:1180px){
     flex-direction: column;

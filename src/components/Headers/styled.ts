@@ -2,9 +2,8 @@ import styled from "styled-components"
 
 
 export const Container = styled.div`
-  position:fixed;
-  z-index: 998;
-  display:flex;
-  width:100vw;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
 
 `

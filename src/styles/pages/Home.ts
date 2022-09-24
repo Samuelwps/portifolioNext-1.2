@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 100vw;
+  max-width: 1440px;
   height: 100vh;
+
+  margin:50px;
 
   display: block;
   justify-content: center;
