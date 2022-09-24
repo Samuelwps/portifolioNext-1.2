@@ -20,8 +20,7 @@ export function Projects() {
       <DivForWorks>
         <SelectedWorks>
           <ProjectsWorks>
-            <p>PROJECTS</p>
-            <h3>Projetos Concluído</h3>
+            <span>PROJECTS</span> <h4>Projetos Concluído</h4>
           </ProjectsWorks>
         </SelectedWorks>
         <section>

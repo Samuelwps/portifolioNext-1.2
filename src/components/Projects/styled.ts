@@ -100,8 +100,8 @@ flex-direction:column;
   min-width: 26rem;
 }
 
-h3{
-  font-size: 1.8rem;
+h4{
+  font-size: 1.4rem;
   font-weight:300;
   @media screen and (max-width:1080px){
     font-size: 1.8rem;
@@ -110,7 +110,7 @@ h3{
 
 }
 
-p{
+span{
   font-size: 1.2rem;
   color: var(--gray-100);
 }

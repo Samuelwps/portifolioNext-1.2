@@ -93,16 +93,5 @@ html{
   }
 }
 
-@media screen and (max-width:400px){
-  html{
-    font-size: 58.5%;
-  }
-}
-
-@media screen and (max-width:350px){
-  html{
-    font-size: 50.5%;
-  }
-}
 
 `
