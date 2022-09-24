@@ -93,5 +93,10 @@ html{
   }
 }
 
+@media screen and (max-width:400px){
+  html{
+    font-size: 58.5%;
+  }
+}
 
 `
