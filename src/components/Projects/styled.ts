@@ -117,8 +117,8 @@ p{
 `;
 
 export const ImgDiv = styled.div`
-  max-width:25rem;
-  max-height:25rem;
+  max-width:20rem;
+  max-height:20rem;
 
   img{
     width:100%;
