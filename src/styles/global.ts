@@ -99,4 +99,10 @@ html{
   }
 }
 
+@media screen and (max-width:350px){
+  html{
+    font-size: 54.5%;
+  }
+}
+
 `
