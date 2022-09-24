@@ -21,7 +21,7 @@ export function Projects() {
         <SelectedWorks>
           <ProjectsWorks>
             <p>PROJECTS</p>
-            <h2>Projetos Concluído</h2>
+            <h3>Projetos Concluído</h3>
           </ProjectsWorks>
         </SelectedWorks>
         <section>

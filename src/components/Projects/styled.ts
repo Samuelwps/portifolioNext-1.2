@@ -92,7 +92,7 @@ border-right: 1px solid var(--gray-800);
 `;
 
 export const ProjectsWorks = styled.div`
-padding:1rem;
+margin:1rem;
 display:flex;
 flex-direction:column;
 
@@ -101,17 +101,18 @@ flex-direction:column;
   min-width: 26rem;
 }
 
-h2{
+h3{
   font-size: 1.8rem;
-  font-weight:400;
+  font-weight:300;
   @media screen and (max-width:1080px){
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
 
 }
 
 p{
+  font-size: 1.2rem;
   color: var(--gray-100);
 }
 `;
@@ -119,6 +120,7 @@ p{
 export const ImgDiv = styled.div`
   max-width:20rem;
   max-height:20rem;
+  margin:1rem;
 
   img{
     width:100%;
@@ -138,6 +140,9 @@ export const DivDescription = styled.div`
   flex-direction: column;
   text-align: center;
 
+  p{
+    font-size:1.4rem;
+  }
 
   div{
     a{
@@ -148,7 +153,7 @@ export const DivDescription = styled.div`
       text-decoration:none;
       transition:0.5s;
       &:hover{
-              transform: scale(1.1);
+        transform: scale(1.1);
       }
     }
   }
@@ -156,7 +161,7 @@ export const DivDescription = styled.div`
 
 export const ListProjectsRev = styled.div`
   padding:1rem;
-  max-width: 45rem;
+  max-width: 50rem;
   display:flex;
 
   @media screen and (max-width:1180px){
@@ -167,9 +172,9 @@ export const ListProjectsRev = styled.div`
 `
 
 export const ListProjects = styled.div`
-  padding:1rem;
+  margin:1rem;
 
-  max-width: 45rem;
+  max-width: 50rem;
 
   display:flex;
 
