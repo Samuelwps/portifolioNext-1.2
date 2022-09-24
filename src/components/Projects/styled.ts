@@ -159,7 +159,6 @@ export const DivDescription = styled.div`
 `
 
 export const ListProjectsRev = styled.div`
-  margin:1rem;
 
   width: 100%;
 
@@ -174,7 +173,6 @@ export const ListProjectsRev = styled.div`
 `
 
 export const ListProjects = styled.div`
-  margin:1rem;
 
   width: 100%;
 
