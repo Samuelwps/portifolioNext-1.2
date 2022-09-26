@@ -5,7 +5,7 @@ import {
 } from "./styled"
 
 
-import { Feste } from "../../services/fauna"
+import { Feste } from "../../pages/api/ContactMe"
 import { useState } from "react"
 
 export function ContactMe(){
@@ -19,7 +19,7 @@ export function ContactMe(){
         Message: AreaTextMessage
     }
 
-    return( 
+    return(
         <Container id="contact">
             <ContainerMessage>
                 <TextMessage>
@@ -43,7 +43,7 @@ export function ContactMe(){
                         onChange={(e) => setInputEmail(e.target.value)}
                         />
 
-                        <textarea 
+                        <textarea
                         value={AreaTextMessage}
                         placeholder="Message"
                         onChange={(e) => setAreaTextMessage(e.target.value)}

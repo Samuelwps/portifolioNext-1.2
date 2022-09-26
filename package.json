@@ -19,11 +19,11 @@
   },
   "devDependencies": {
     "@types/node": "^18.7.18",
-    "faunadb": "^4.7.0",
     "@types/react": "^18.0.20",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "babel-plugin-inline-react-svg": "^2.0.1",
+    "env-cmd": "^10.1.0",
     "eslint": "^8.0.1",
     "eslint-config-next": "12.3.0",
     "eslint-config-prettier": "^8.5.0",
@@ -33,6 +33,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.8",
+    "faunadb": "^4.7.0",
     "prettier": "^2.7.1",
     "styled-components": "^5.3.5",
     "typescript": "^4.8.3"
