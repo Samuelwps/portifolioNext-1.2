@@ -4,7 +4,7 @@ import {
   DivMessageButton
 } from "./styled"
 
-import { useRef, useEffect, useState} from "react"
+import { useEffect, useState} from "react"
 
 import CircularProgress from "@mui/material/CircularProgress"
 import { toast } from 'react-toastify';
@@ -17,23 +17,35 @@ export function ContactMe(){
   const [AreaTextMessage, setAreaTextMessage] = useState("")
 
   function Call(){
-    if(InputName === ""){
-      toast.error("name")
-    }else{
-      useEffect(() => {
-      async function apiCall () {
-        const res = await fetch("/api/contactme", {
-          method:"POST",
-          headers:{"Content-Type":"application/json"},
-          body: JSON.stringify({ name:InputName, email:InputEmail, message:AreaTextMessage})
-        })
+    try{
+      if(InputName === "" || InputEmail === "" || AreaTextMessage === "" ){
+        toast.error("Preencha todos os campos")
         setCall(false)
-        setInputName("")
-        setInputEmail("")
-        setAreaTextMessage("")
+      } else {
+        try{
+        useEffect(() => {
+        async function apiCall () {
+          const res = await fetch("/api/contactme", {
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body: JSON.stringify({ name:InputName, email:InputEmail, message:AreaTextMessage, submited})
+          })
+          setCall(false)
+          setInputName("")
+          setInputEmail("")
+          setAreaTextMessage("")
+          toast.success("mensagem enviada")
+        }
+        apiCall()
+        },[])
+        } catch(err){
+          console.log(err)
+          toast.error("Erro com o Banco de dados")
+        }
       }
-      apiCall()
-      },[])
+
+    } catch {
+      toast.error("Preencha todos os campos")
     }
     return(
       <DivMessageButton onClick={submited}>
