@@ -1,53 +1,40 @@
 import {
-    Container, Message, TextMessage,
-    IniciarProjeto, MessageData, ContainerMessage,
-    DivMessageButton
+  Container, Message, TextMessage,
+  IniciarProjeto, MessageData, ContainerMessage,
+  DivMessageButton
 } from "./styled"
-
-import {useStore} from "../state"
 
 import { useRef, useEffect, useState} from "react"
 
 import CircularProgress from "@mui/material/CircularProgress"
+import { toast } from 'react-toastify';
 
 export function ContactMe(){
-  const node1 = useRef()
-  const node2 = useRef()
-  const node3 = useRef()
 
+  const [call, setCall] = useState(false)
   const [InputName, setInputName] = useState("")
   const [InputEmail, setInputEmail] = useState("")
   const [AreaTextMessage, setAreaTextMessage] = useState("")
 
-  const call = useStore(state => state.call)
-  const setCall = useStore(state => state.setCall)
-
-  const name = useStore(state => state.name)
-  const setName = useStore(state => state.setName)
-
-  const email = useStore(state => state.email)
-  const setEmail = useStore(state => state.setEmail)
-
-  const message = useStore(state => state.message)
-  const setMessage = useStore(state => state.setMessage)
-
   function Call(){
-    useEffect(() => {
-
-    async function apiCall () {
-      const res = await fetch("/api/contactme", {
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body: JSON.stringify({ name:name, email:email, message:message})
-      })
-      setCall(false)
-      setInputName("")
-      setInputEmail("")
-      setAreaTextMessage("")
+    if(InputName === ""){
+      toast.error("name")
+    }else{
+      useEffect(() => {
+      async function apiCall () {
+        const res = await fetch("/api/contactme", {
+          method:"POST",
+          headers:{"Content-Type":"application/json"},
+          body: JSON.stringify({ name:InputName, email:InputEmail, message:AreaTextMessage})
+        })
+        setCall(false)
+        setInputName("")
+        setInputEmail("")
+        setAreaTextMessage("")
+      }
+      apiCall()
+      },[])
     }
-    apiCall()
-    },[])
-
     return(
       <DivMessageButton onClick={submited}>
         <CircularProgress style={{color: "white", }}/>
@@ -57,9 +44,6 @@ export function ContactMe(){
 
   const submited = () =>{
     setCall(true)
-    setName(node1.current.value)
-    setEmail(node2.current.value)
-    setMessage(node3.current.value)
   }
 
     return(
@@ -70,7 +54,6 @@ export function ContactMe(){
                         <div/>
                         <h4>Iniciar projeto</h4>
                     </IniciarProjeto>
-
                     <h1>Vamos começar?</h1>
                     <p>Conte-me sobre seu projeto<br/>Vou responder em breve</p>
                 </TextMessage>
@@ -81,10 +64,8 @@ export function ContactMe(){
                         value={InputName}
                         onChange={(e) => setInputName(e.target.value)}
                         placeholder="Nome"
-                        ref={node1}
                         />
                         <input type="text"
-                        ref={node2}
                         value={InputEmail}
                         placeholder="Email"
                         onChange={(e) => setInputEmail(e.target.value)}
@@ -92,15 +73,18 @@ export function ContactMe(){
                         <textarea
                         value={AreaTextMessage}
                         placeholder="Message"
-                        ref={node3}
                         onChange={(e) => setAreaTextMessage(e.target.value)}
                         />
 
-                        {call ? <Call/> :
+                        {
+                        call ?
+                        <Call/>
+                        :
                         <DivMessageButton onClick={submited}>
                           Enviar mensagem
                         </DivMessageButton>
-                      }
+                        }
+
                     </MessageData>
                 </Message>
             </ContainerMessage>
