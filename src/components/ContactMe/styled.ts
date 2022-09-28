@@ -31,7 +31,7 @@ export const ContainerMessage = styled.div`
 `
 
 export const Message = styled.div`
-    display:flex;   
+    display:flex;
 
     margin:1rem;
 `
@@ -52,12 +52,12 @@ export const MessageData = styled.div`
     justify-content:center;
     justify-content:space-around;
     flex-direction:column;
-    
+
     border-radius: 8px;
 
     input{
         width:100%;
-        
+
         padding:1.2rem;
 
         font-size: 1.2rem;
@@ -99,24 +99,21 @@ export const MessageData = styled.div`
 `
 
 export const DivMessageButton = styled.div`
-    width: 100%;
-
     display:flex;
     justify-content:right;
     align-items: right;
 
-    button{
-        color:white;
-        cursor:pointer;
-        background:var(--yellow-500);
-        padding:0.7rem;
-        border:none;
-        border-radius: 2px;
+    color:white;
+    cursor:pointer;
+    background:var(--yellow-500);
+    padding:0.7rem;
+    border:none;
+    border-radius: 2px;
 
-        letter-spacing: 1px;
-        font-size:1.2rem;
-        font-weight: 100;
-    }
+    letter-spacing: 1px;
+    font-size:1.2rem;
+    font-weight: 100;
+
 `
 
 export const TextMessage = styled.div`
@@ -131,7 +128,7 @@ export const TextMessage = styled.div`
 
     text-align: center;
 
-    
+
 `
 
 export const IniciarProjeto = styled.div`

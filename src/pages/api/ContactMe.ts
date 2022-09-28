@@ -1,43 +1,21 @@
+const faunadb = require("faunadb")
 import { query as q } from "faunadb"
 
-import {fauna} from "../../services/fauna"
-
 import { toast } from 'react-toastify';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 
-export async function Feste(
-  contact: {Name:string, Email:string, Message:string},
-  setInputName:React.Dispatch<React.SetStateAction<string>>,
-  setInputEmail:React.Dispatch<React.SetStateAction<string>>,
-  setAreaTextMessage:React.Dispatch<React.SetStateAction<string>>
-)
-{
-  if(contact.Name === "" || contact.Email === ""|| contact.Message === ""){
-    if(contact.Name === ""){
-      toast.error("Escreva seu nome")
-    }
-    if(contact.Email === ""){
-      toast.error("Escreva seu Email")
-    }
-    if(contact.Message === ""){
-      toast.error("Escreva sua mensagem")
-    }
+export default async(req:NextApiRequest, res:NextApiResponse) =>{
+  const {email,name,message} = req.body
 
-  } else{
-      try{
-      await fauna.query(
-        q.Create(
-          q.Collection("contact"),
-          {data : {contact}}
-        )
-      )
-      setInputName("")
-      setInputEmail("")
-      setAreaTextMessage("")
+  const client = new faunadb.Client({secret: process.env.FAUNADB_KEY})
+  try{
+      await client.query(q.Create(q.Collection("contact"), {data: {name:name,email:email, message:message}}))
       toast.success("Mensagem enviada com sucesso")
+      res.status(200).json({})
       return true
     } catch {
+      res.status(405).end("Method not allowed")
       return false
     }
-  }
 }
