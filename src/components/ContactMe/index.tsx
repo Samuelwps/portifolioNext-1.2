@@ -17,11 +17,6 @@ export function ContactMe(){
   const [AreaTextMessage, setAreaTextMessage] = useState("")
 
   function Call(){
-    try{
-      if(InputName === "" || InputEmail === "" || AreaTextMessage === "" ){
-        toast.error("Preencha todos os campos")
-        setCall(false)
-      } else {
         useEffect(() => {
         async function apiCall () {
           const res = await fetch("/api/contactme", {
@@ -37,10 +32,6 @@ export function ContactMe(){
         }
         apiCall()
         },[])
-      }
-    } catch {
-      toast.error("err")
-    }
     return(
       <DivMessageButton onClick={submited}>
         <CircularProgress style={{color: "white", }}/>
