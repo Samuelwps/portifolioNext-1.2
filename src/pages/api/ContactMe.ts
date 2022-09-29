@@ -7,7 +7,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 export default async(req:NextApiRequest, res:NextApiResponse) =>{
   const {email,name,message} = req.body
 
-  const client = new faunadb.Client({secret: "fnAExRWcSEACUG0CcdZlZMAGhCEp3JSlpWVhTmf9"})
+  const client = new faunadb.Client({secret: process.env.NEXT_APP_FAUNA_KEY})
   try{
       await client.query(q.Create(q.Collection("contact"), {data: {name:name,email:email, message:message}}))
       res.status(200).json({})
