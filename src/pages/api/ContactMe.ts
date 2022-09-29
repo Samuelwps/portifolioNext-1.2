@@ -1,7 +1,6 @@
 const faunadb = require("faunadb")
 import { query as q } from "faunadb"
 
-import { toast } from 'react-toastify';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 
