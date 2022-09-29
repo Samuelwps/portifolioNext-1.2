@@ -1,18 +1,19 @@
 const faunadb = require("faunadb")
 import { query as q } from "faunadb"
 
+import { toast } from 'react-toastify';
 import { NextApiRequest, NextApiResponse } from 'next';
 
-const express = require("express")
-const app = express()
 
-
-
-const client = new faunadb.Client({secret: process.env.NEXT_APP_FAUNA_KEY})
-
-app.post("/api/contactme", async (req:NextApiRequest, res:NextApiResponse) => {
+export default async(req:NextApiRequest, res:NextApiResponse) =>{
   const {email,name,message} = req.body
-  res.setHeader("Access-Control-Allow-Origin", "*")
-  await client.query(q.Create(q.Collection("contact"), {data: {name:"certo"}}))
-  res.status(200).json({})
-})
+
+  const client = new faunadb.Client({secret: process.env.NEXT_APP_FAUNA_KEY})
+  try{
+      await client.query(q.Create(q.Collection("contact"), {data: {name:name,email:email, message:message}}))
+      res.status(200).json({})
+    } catch {
+      res.setHeader("Allow", "POST")
+      res.status(405).end("Method not allowed")
+    }
+}
