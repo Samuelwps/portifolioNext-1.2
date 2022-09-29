@@ -22,7 +22,6 @@ export function ContactMe(){
         toast.error("Preencha todos os campos")
         setCall(false)
       } else {
-        try{
         useEffect(() => {
         async function apiCall () {
           const res = await fetch("/api/contactme", {
@@ -38,14 +37,9 @@ export function ContactMe(){
         }
         apiCall()
         },[])
-        } catch(err){
-          console.log(err)
-          toast.error("Erro com o Banco de dados")
-        }
       }
-
     } catch {
-      toast.error("Preencha todos os campos")
+      toast.error("err")
     }
     return(
       <DivMessageButton onClick={submited}>
