@@ -25,7 +25,7 @@ export function ContactMe(){
         try{
         useEffect(() => {
         async function apiCall () {
-          const res = await fetch("https://api.vercel.com/v1/integrations/deploy/prj_uDrnRgfF9doUuYPy7phqwMaPpOlp/hvCmCw33zP", {
+          const res = await fetch("/api/contactme", {
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify({ name:InputName, email:InputEmail, message:AreaTextMessage, submited})
