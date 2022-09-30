@@ -25,7 +25,7 @@ export function ContactMe(){
         try{
         useEffect(() => {
         async function apiCall () {
-          const res = await fetch("/api/contactme", {
+          const res = await fetch("/api/ContactMe", {
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify({ name:InputName, email:InputEmail, message:AreaTextMessage, submited})
