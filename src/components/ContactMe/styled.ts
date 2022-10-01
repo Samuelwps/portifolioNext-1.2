@@ -1,148 +1,158 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    max-width:1440px;
+width:100%;
+height:100%;
 
-    margin:0 auto;
+padding:2rem;
 
-    padding:2rem;
-
-    border-top: 1px solid var(--gray-800);
+border-top: 1px solid var(--gray-800);
 `
 
 export const ContainerMessage = styled.div`
-    max-width: 1040px;
-    min-height: 20rem;
+width:100%;
+height:100%;
+
+display:flex;
+justify-content:center;
+justify-content:space-between;
+align-items:center;
 
 
-    margin:0 auto;
+@media screen and (max-width:940px){
+  flex-direction:column;
+  min-height: 25rem;
+  justify-content:space-around;
 
-    display:flex;
-    justify-content:center;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:2rem;
-
-    @media screen and (max-width:940px){
-        flex-direction:column;
-        min-height: 25rem;
-    }
+}
 `
 
 export const Message = styled.div`
-    display:flex;
+display:flex;
 
-    margin:1rem;
+margin:1rem;
 `
 
 export const MessageData = styled.div`
-    background: var(--background-input);
-    border-radius: 2px;
+background: var(--background-input);
+border-radius: 2px;
 
 
-    min-width:30rem;
+min-width:30rem;
 
-    min-height:30rem;
+min-height:30rem;
 
-    padding:1.3rem;
+padding:1.3rem;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    justify-content:space-around;
-    flex-direction:column;
+display:flex;
+align-items:center;
+justify-content:center;
+justify-content:space-around;
+flex-direction:column;
 
-    border-radius: 8px;
+border-radius: 8px;
 
-    input{
-        width:100%;
+input{
+  width:100%;
 
-        padding:1.2rem;
+  padding:1.2rem;
 
-        font-size: 1.2rem;
+  font-size: 1.2rem;
 
-        color:white;
+  color:white;
 
-        border-radius: 5px;
+  border-radius: 5px;
 
-        border:none;
-        outline: none;
-        background:var(--background);
-    }
+  border:none;
+  outline: none;
+  background:var(--background);
+}
 
-    input:focus{
-        border:1px solid var(--yellow-500);
-    }
+input:focus{
+  border:1px solid var(--yellow-500);
+}
 
-    textarea{
-        width:100%;
-        height:10rem;
+textarea{
+  width:100%;
+  height:10rem;
 
-        color:white;
+  color:white;
 
-        padding:1.2rem;
+  padding:1.2rem;
 
-        font-size: 1.3rem;
+  font-size: 1.3rem;
 
-        border-radius: 5px;
-        border:none;
-        background:var(--background);
+  border-radius: 5px;
+  border:none;
+  background:var(--background);
 
-        resize:none;
-        outline:none;
-    }
+  resize:none;
+  outline:none;
+}
 
-    textarea:focus{
-        border:1px solid var(--yellow-500);
-    }
+textarea:focus{
+  border:1px solid var(--yellow-500);
+}
 `
 
 export const DivMessageButton = styled.div`
-    display:flex;
-    justify-content:right;
-    align-items: right;
+display:flex;
+justify-content:right;
+align-items: right;
 
-    color:white;
-    cursor:pointer;
-    background:var(--yellow-500);
-    padding:0.7rem;
-    border:none;
-    border-radius: 2px;
+color:white;
+cursor:pointer;
+background:var(--yellow-500);
+padding:0.7rem;
+border:none;
+border-radius: 2px;
 
-    letter-spacing: 1px;
-    font-size:1.2rem;
-    font-weight: 100;
+letter-spacing: 1px;
+font-size:1.2rem;
+font-weight: 100;
 
 `
 
 export const TextMessage = styled.div`
-    max-height: 15rem;
+width:100%;
+height:100%;
 
-    margin:1rem;
+margin:1rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
 
-    text-align: center;
+text-align: center;
+
+h1{
+  color:var(--yellow-500);
+  font-size:2.5rem;
+}
+
+p{
+  color:var(--white);
+  font-size:1.5rem;
+}
 
 
 `
 
 export const IniciarProjeto = styled.div`
-    display:flex;
-    align-items: center;
-    justify-content:center;
+width:100%;
+height:100%;
+display:flex;
+align-items: center;
+justify-content:center;
 
-    div{
-        margin-right:0.5rem;
+div{
+  margin-right:0.5rem;
 
-        width:2.3rem;
-        height:2px;
+  width:2.3rem;
+  height:2px;
 
-        background: var(--yellow-500);
-    }
+  background: var(--yellow-500);
+}
 
 `

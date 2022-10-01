@@ -6,7 +6,6 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async(req:NextApiRequest, res:NextApiResponse) =>{
   if(req.method === "POST" ){
-    console.log("leu")
     const {email,name,message} = req.body
 
     const client = new faunadb.Client({secret: process.env.NEXT_APP_FAUNA_KEY})
