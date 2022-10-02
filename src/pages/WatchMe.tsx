@@ -5,7 +5,7 @@ import {
     DivImage, Projectcontent, DivImageContent,
     DivProjectSideBar, DivP, ProjectContent,
     DivImageSidebar
- } from "./styled"
+ } from "../styles/pages/WatchMe"
 
 import Head from 'next/head'
 

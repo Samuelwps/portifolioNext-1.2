@@ -8,7 +8,7 @@ import {
     Projectcontent, DivSummaryCategory, DivSummaryHeader,
     DivImageSummary, ButtonGit
 
-} from "./styled"
+} from "../styles/pages/Carts"
 
 import { FaGithub } from 'react-icons/fa'
 

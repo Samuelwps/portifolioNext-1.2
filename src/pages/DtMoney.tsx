@@ -5,7 +5,7 @@ import {
   DivImageSummaryCategory, ProjectHeader, SectionWorks,
   DivImageSummary, DivContent, DivTitle,
   Title, DivImage, ProjectContent
-} from "./styled"
+} from "../styles/pages/DtMoney"
 
 import Head from 'next/head'
 
