@@ -19,7 +19,11 @@ export const DivForWorks = styled.div`
 `;
 
 export const ButtonAco = styled.button`
-margin:0 auto;
+width:100%;
+height:100%;
+
+background: red;
+
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -119,7 +123,6 @@ span{
 export const ImgDiv = styled.div`
   max-width:20rem;
   max-height:20rem;
-  margin:1rem;
 
   img{
     width:100%;
@@ -139,23 +142,40 @@ export const DivDescription = styled.div`
   flex-direction: column;
   text-align: center;
 
-  p{
-    font-size:1.4rem;
-  }
+.Arrow{
+  width:100%;
+  height: 100%;
 
-  div{
-    a{
-      display:flex;
-      justify-items:center;
-      align-items:center;
-      color:var(--yellow-500);
-      text-decoration:none;
-      transition:0.5s;
-      &:hover{
-        transform: scale(1.1);
-      }
+  font-size:1.3rem;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  img{
+    max-width: 4rem;;
+  }
+}
+
+p{
+  font-size:1.4rem;
+}
+
+div{
+  a{
+    display:flex;
+    justify-items:center;
+    align-items:center;
+    color:var(--yellow-500);
+    text-decoration:none;
+    transition:0.5s;
+    &:hover{
+      transform: scale(1.1);
     }
   }
+}
 `
 
 export const ListProjectsRev = styled.div`
@@ -163,6 +183,8 @@ export const ListProjectsRev = styled.div`
   width: 100%;
 
   display:flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 
   @media screen and (max-width:1180px){
@@ -173,10 +195,11 @@ export const ListProjectsRev = styled.div`
 `
 
 export const ListProjects = styled.div`
-
   width: 100%;
 
   display:flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 
   @media screen and (max-width:1180px){

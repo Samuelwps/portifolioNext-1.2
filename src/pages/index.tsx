@@ -15,7 +15,6 @@ const Home: React.FC = () => {
         <title>Homepage</title>
       </Head>
       <main>
-        <Headers/>
         <AboutMe/>
         <Projects/>
         <ContactMe/>
