@@ -17,7 +17,7 @@ const WatchMe: React.FC = () => {
         <SectionWorks>
           <Head>
             <link rel="icon" type="imagem/svg" href="/images/watchMe.svg"/>
-            <title>WatchMe</title>
+            <title>WatchMe | portfólio</title>
           </Head>
 
           <ProjectHeader>

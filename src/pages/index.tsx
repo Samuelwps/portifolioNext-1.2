@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>Homepage</title>
+        <title>Home | portfólio</title>
       </Head>
       <main>
         <AboutMe/>

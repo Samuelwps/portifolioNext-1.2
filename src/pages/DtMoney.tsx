@@ -17,7 +17,7 @@ const DtMoney: React.FC = () => {
     <SectionWorks>
       <Head>
         <link rel="icon" type="imagem/svg" href="/images/dtmoneyIcon.svg"/>
-        <title>Dt-Money</title>
+        <title>DT-Money | portfólio</title>
       </Head>
       <main>
         <ProjectHeader>

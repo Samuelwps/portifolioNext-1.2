@@ -17,7 +17,7 @@ const Cart: React.FC = () => {
         <Container>
           <Head>
             <link rel="icon" type="imagem/svg" href="/images/IconRocketShoes.svg"/>
-            <title>Cart</title>
+            <title>Cart | portfólio</title>
           </Head>
           <main>
             <ProjectHeader>
