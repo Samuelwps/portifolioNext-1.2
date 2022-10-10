@@ -32,9 +32,7 @@ export function Projects() {
               <span>01</span>Cart
             </Title>
             <p>
-              Um dos meus primeiros projetos
-              como treinamento em desenvolvimento
-              Front-End com rocketseat-education
+              Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
             </p>
             <div className="Arrow">
               <a href="/Cart"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
@@ -71,9 +69,7 @@ export function Projects() {
               <span>03</span>DT-Money
             </Title>
             <p>
-              Um dos meus primeiros projetos
-              como treinamento em desenvolvimento
-              Front-End com rocketseat-education
+              Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
             </p>
             <div className="Arrow">
               <a href="/DtMoney"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
@@ -84,12 +80,10 @@ export function Projects() {
         <ListProjectsRev>
           <DivDescription>
             <Title>
-              <span>03</span>DT-Money
+              <span>04</span>To-do
             </Title>
             <p>
-              Um dos meus primeiros projetos
-              como treinamento em desenvolvimento
-              Front-End com rocketseat-education
+              Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
             </p>
             <div className="Arrow">
               <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank"><img src="/images/chevrons-right.svg"/>Deploy</a>
@@ -99,6 +93,24 @@ export function Projects() {
             <img src="/images/TodoIcon.svg" alt="TodoIcon"/>
           </ImgDiv>
         </ListProjectsRev>
+
+        <ListProjects>
+          <ImgDiv>
+            <img src="/images/iconSpaceTraviling.svg" id="DtmoneyIcon"/>
+          </ImgDiv>
+
+          <DivDescription>
+            <Title>
+              <span>05</span>Space-Traviling
+            </Title>
+            <p>
+              Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
+            </p>
+            <div className="Arrow">
+              <a href="https://projeto-do-zero.vercel.app/" target="_blank"><img src="/images/chevrons-right.svg" />Deploy</a>
+            </div>
+          </DivDescription>
+        </ListProjects>
 
         <DivCSS>
           <ButtonAco onClick={() =>  content?(setContent(false)):(setContent(true))}>
