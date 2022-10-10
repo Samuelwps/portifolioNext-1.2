@@ -66,7 +66,7 @@ export function Projects() {
 
           <DivDescription>
             <Title>
-              <span>05</span>Space-Traviling
+              <span>03</span>Space-Traviling
             </Title>
             <p>
               Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
@@ -101,7 +101,7 @@ export function Projects() {
 
           <DivDescription>
             <Title>
-              <span>03</span>DT-Money
+              <span>05</span>DT-Money
             </Title>
             <p>
               Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
