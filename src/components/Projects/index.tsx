@@ -61,18 +61,18 @@ export function Projects() {
 
         <ListProjects>
           <ImgDiv>
-            <img src="/images/dtmoneyIcon.svg" id="DtmoneyIcon"/>
+            <img src="/images/iconSpaceTraviling.svg" id="DtmoneyIcon"/>
           </ImgDiv>
 
           <DivDescription>
             <Title>
-              <span>03</span>DT-Money
+              <span>05</span>Space-Traviling
             </Title>
             <p>
               Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
             </p>
             <div className="Arrow">
-              <a href="/DtMoney"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
+              <a href="https://projeto-do-zero.vercel.app/" target="_blank"><img src="/images/chevrons-right.svg" />Deploy</a>
             </div>
           </DivDescription>
         </ListProjects>
@@ -96,18 +96,18 @@ export function Projects() {
 
         <ListProjects>
           <ImgDiv>
-            <img src="/images/iconSpaceTraviling.svg" id="DtmoneyIcon"/>
+            <img src="/images/dtmoneyIcon.svg" id="DtmoneyIcon"/>
           </ImgDiv>
 
           <DivDescription>
             <Title>
-              <span>05</span>Space-Traviling
+              <span>03</span>DT-Money
             </Title>
             <p>
               Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
             </p>
             <div className="Arrow">
-              <a href="https://projeto-do-zero.vercel.app/" target="_blank"><img src="/images/chevrons-right.svg" />Deploy</a>
+              <a href="/DtMoney"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
             </div>
           </DivDescription>
         </ListProjects>
