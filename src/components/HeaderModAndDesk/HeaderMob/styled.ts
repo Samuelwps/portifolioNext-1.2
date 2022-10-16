@@ -19,6 +19,8 @@ align-items: center;
 flex-direction:column;
 justify-content: center;
 
+color:var(--white);
+
 background: var(--background-input);
 backdrop-filter: blur(4px);
 
@@ -26,6 +28,7 @@ opacity: 0;
 pointer-events: none;
 
 nav{
+  color:var(--white);
   display: flex;
   flex-direction:column;
   justify-content:center;

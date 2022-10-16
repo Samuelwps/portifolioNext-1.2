@@ -5,6 +5,7 @@ export const Container = styled.section`
 width:100%;
 margin:0 auto;
 margin-top: 100px;
+color:var(--white);
 `;
 
 export const DivForWorks = styled.div`

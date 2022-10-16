@@ -88,7 +88,7 @@ const DtMoney: React.FC = () => {
                 <p>Logo após ser criado uma nova transação, o array é renderizado e é exibido o novo valor adicionado.</p>
               </DivSummaryHeader>
           </DivSummaryCategory>
-          <ButtonGit href="https://github.com/Samuelwps/dt-money">
+          <ButtonGit target="_blank" href="https://github.com/Samuelwps/dt-money">
             <FaGithub/>
             <p>View repository</p>
           </ButtonGit>

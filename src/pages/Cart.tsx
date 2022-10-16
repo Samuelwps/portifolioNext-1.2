@@ -76,7 +76,7 @@ const Cart: React.FC = () => {
                     </DivImageSummary>
                     <p>removeProduct que vai remover um produto do<br/>inteiro do carrinho.</p>
 
-                    <ButtonGit href="https://github.com/Samuelwps/dt-money">
+                    <ButtonGit href="https://github.com/Samuelwps/Carrinho" target="_blank">
                       <FaGithub/>
                       <p>View repository</p>
                     </ButtonGit>

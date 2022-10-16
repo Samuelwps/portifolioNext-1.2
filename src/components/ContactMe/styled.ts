@@ -59,7 +59,7 @@ input{
 
   font-size: 1.2rem;
 
-  color:white;
+  color:var(--white);
 
   border-radius: 5px;
 
@@ -76,7 +76,7 @@ textarea{
   width:100%;
   height:10rem;
 
-  color:white;
+  color:var(--white);
 
   padding:1.2rem;
 
@@ -100,7 +100,7 @@ display:flex;
 justify-content:right;
 align-items: right;
 
-color:white;
+color:var(--white);
 cursor:pointer;
 background:var(--yellow-500);
 padding:0.7rem;
@@ -145,6 +145,8 @@ height:100%;
 display:flex;
 align-items: center;
 justify-content:center;
+
+color:var(--white);
 
 div{
   margin-right:0.5rem;

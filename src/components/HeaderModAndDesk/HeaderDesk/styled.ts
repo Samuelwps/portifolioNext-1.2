@@ -15,7 +15,7 @@ font-family: 'Jura', sans-serif;
 font-weight:400;
 font-size: 1.3rem;
 
-
+color:var(--white);
 
 @media screen and (max-width: 720px){
   align-items: center;

@@ -8,6 +8,8 @@ display:flex;
 flex-direction:row;
 justify-content:space-around;
 
+color:var(--white);
+
 padding: 2.5rem 0rem 0rem 0rem;
 
 @media screen and (max-width:940px){
@@ -26,7 +28,7 @@ flex-direction:column;
 }
 
 h1{
-  color:white;
+  color:var(--white);
   padding-top: 0.1rem;
   font-size:3rem;
 }
@@ -53,7 +55,7 @@ a{
   transition:0.5s;
 
   &:hover{
-    filter: drop-shadow(0px 0px 5px #E9AB2F);
+    filter: drop-shadow(0px 0px 5px var(--yellow-500));
   }
 }
 `;

@@ -60,7 +60,7 @@ const WatchMe: React.FC = () => {
                   </DivImageContent>
                   <p>Responsavel pela exibição do conteúdo atravez de uma requisição de uma api, usando como “norte” a SideBar para saber qual genero está selecionado</p>
 
-                  <ButtonGit href="https://github.com/Samuelwps/01-Catalogo-de-filme">
+                  <ButtonGit target="_blank" href="https://github.com/Samuelwps/01-Catalogo-de-filme">
                     <FaGithub/>
                     <p>View repository</p>
                   </ButtonGit>
