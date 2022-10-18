@@ -32,7 +32,7 @@ export function Projects() {
               <span>01</span>Cart
             </Title>
             <p>
-              Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
+              Trilia ReactJs Ignite<br/>Desafio 01 - Criando um hook de carrinho de compras.
             </p>
             <div className="Arrow">
               <a href="/Cart"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
@@ -47,7 +47,7 @@ export function Projects() {
               <span>02</span>WatchMe
             </Title>
             <p>
-              Projetos como meu treinamento em desenvolvimento Front-End com rocketseat-education
+              Trilia ReactJs Ignite<br/>Desafio 02 - Componentizando a aplicação.
             </p>
             <div className="Arrow">
               <a href="/WatchMe"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
@@ -69,7 +69,7 @@ export function Projects() {
               <span>03</span>Space-Traviling
             </Title>
             <p>
-              Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
+              Trilia ReactJs Ignite<br/>Desafio 03 - Criando um projeto do zero
             </p>
             <div className="Arrow">
               <a href="https://projeto-do-zero.vercel.app/" target="_blank"><img src="/images/chevrons-right.svg" />Deploy</a>
@@ -83,7 +83,7 @@ export function Projects() {
               <span>04</span>To-do
             </Title>
             <p>
-              Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
+              Trilia ReactJs Ignite<br/>Desafio 04 - Conceitos do React.
             </p>
             <div className="Arrow">
               <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank"><img src="/images/chevrons-right.svg"/>Deploy</a>
