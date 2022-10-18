@@ -14,15 +14,13 @@ width:100%;
 height:100%;
 
 display:flex;
-justify-content:center;
-justify-content:space-between;
 align-items:center;
-
+justify-content: center;
+justify-content: space-around;
 
 @media screen and (max-width:940px){
   flex-direction:column;
   min-height: 25rem;
-  justify-content:space-around;
 
 }
 `
@@ -114,9 +112,6 @@ font-weight: 100;
 `
 
 export const TextMessage = styled.div`
-width:100%;
-height:100%;
-
 margin:1rem;
 
 display: flex;
