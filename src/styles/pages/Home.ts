@@ -2,12 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1440px;
+  width: 100vw;
   height: 100vh;
-
-  display: block;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
   h1 {
     font-size: 54px;

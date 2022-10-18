@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components"
 export default createGlobalStyle`
 :root{
   --white: #FFFFFF;
-  --white-1000:#35353562;
+  --white-100:#35353562;
 
   --gray-100: #a8a8b3;
   --gray-300: #949494;
@@ -29,7 +29,7 @@ export default createGlobalStyle`
 }
 
 body{
-  width:100vw;
+  width:100%;
   height: 100vh;
 
   display:flex;
@@ -52,9 +52,6 @@ html{
     background: transparent;
   }
 
-  ::-webkit-scrollbar-track {
-    background: transparent;        /* color of the tracking area */
-  }
 
   ::-webkit-scrollbar-thumb{
     border-radius: 10px;
