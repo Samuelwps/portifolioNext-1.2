@@ -150,13 +150,23 @@ export const DivDescription = styled.div`
   font-size:1.3rem;
 
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 
+  a{
+    padding: 10px;
+    .iconsProj{
+      width:2.5rem;
+      height:2.5rem;
 
-  img{
-    max-width: 4rem;;
+    }
+    .iconsProj:hover{
+      color:white;
+
+    }
+
+    color:var(--yellow-500);
   }
 }
 

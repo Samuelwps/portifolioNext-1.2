@@ -8,6 +8,9 @@ import {
 
 import { useState } from 'react';
 
+import {  HiOutlineViewList} from 'react-icons/hi'
+import {BiLinkExternal } from "react-icons/bi"
+
 export function Projects() {
 
   const [content, setContent] = useState(false)
@@ -35,8 +38,8 @@ export function Projects() {
               Trilia ReactJs Ignite<br/>Desafio 01 - Criando um hook de carrinho de compras.
             </p>
             <div className="Arrow">
-              <a href="/Cart"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
-              <a href="https://carrinho-three.vercel.app" target="_blank"><img src="/images/chevrons-right.svg" />Deploy</a>
+              <a href="/Cart"><HiOutlineViewList className="iconsProj"/></a>
+              <a href="https://carrinho-three.vercel.app" target="_blank"><BiLinkExternal className="iconsProj"/></a>
             </div>
           </DivDescription>
         </ListProjects>
@@ -50,8 +53,8 @@ export function Projects() {
               Trilia ReactJs Ignite<br/>Desafio 02 - Componentizando a aplicação.
             </p>
             <div className="Arrow">
-              <a href="/WatchMe"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
-              <a href="https://01-movie.netlify.app" target="_blank"><img src="/images/chevrons-right.svg"/>Deploy</a>
+              <a href="/WatchMe"><HiOutlineViewList className="iconsProj"/></a>
+              <a href="https://01-movie.netlify.app" target="_blank"><BiLinkExternal className="iconsProj"/></a>
             </div>
           </DivDescription>
           <ImgDiv>
@@ -72,7 +75,7 @@ export function Projects() {
               Trilia ReactJs Ignite<br/>Desafio 03 - Criando um projeto do zero
             </p>
             <div className="Arrow">
-              <a href="https://projeto-do-zero.vercel.app/" target="_blank"><img src="/images/chevrons-right.svg" />Deploy</a>
+              <a href="https://projeto-do-zero.vercel.app/" target="_blank"><BiLinkExternal className="iconsProj"/></a>
             </div>
           </DivDescription>
         </ListProjects>
@@ -86,7 +89,7 @@ export function Projects() {
               Trilia ReactJs Ignite<br/>Desafio 04 - Conceitos do React.
             </p>
             <div className="Arrow">
-              <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank"><img src="/images/chevrons-right.svg"/>Deploy</a>
+              <a href="https://subtle-macaron-9e7b36.netlify.app" target="_blank"><BiLinkExternal className="iconsProj"/></a>
             </div>
           </DivDescription>
           <ImgDiv>
@@ -107,7 +110,7 @@ export function Projects() {
               Um dos meus primeiros projetos como treinamento em desenvolvimento Front-End com rocketseat-education
             </p>
             <div className="Arrow">
-              <a href="/DtMoney"><img src="/images/chevrons-right.svg" />Visualizar projeto</a>
+              <a href="/DtMoney"><HiOutlineViewList className="iconsProj"/></a>
             </div>
           </DivDescription>
         </ListProjects>
@@ -131,7 +134,7 @@ export function Projects() {
                     <span>01</span>Menu
                   </Title>
                   <div className="Arrow">
-                    <a href="https://menu-flutuante.netlify.app"><img src="/images/chevrons-right.svg" />Deploy</a>
+                    <a href="https://menu-flutuante.netlify.app"><BiLinkExternal className="iconsProj"/></a>
                   </div>
                 </DivDescription>
               </ListProjects>
