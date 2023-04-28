@@ -10,6 +10,7 @@ import {
 import Head from 'next/head'
 
 import { FaGithub } from 'react-icons/fa'
+import { GitButton } from '../components/gitButton'
 
 const DtMoney: React.FC = () => {
   return(
@@ -88,10 +89,9 @@ const DtMoney: React.FC = () => {
                 <p>Logo após ser criado uma nova transação, o array é renderizado e é exibido o novo valor adicionado.</p>
               </DivSummaryHeader>
           </DivSummaryCategory>
-          <ButtonGit target="_blank" href="https://github.com/Samuelwps/dt-money">
-            <FaGithub/>
-            <p>View repository</p>
-          </ButtonGit>
+
+          <GitButton link="https://github.com/Samuelwps/dt-money"/>
+
         </ProjectContent>
       </main>
     </SectionWorks>

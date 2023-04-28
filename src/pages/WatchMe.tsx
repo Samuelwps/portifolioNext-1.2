@@ -10,6 +10,7 @@ import {
 import Head from 'next/head'
 
 import { FaGithub } from 'react-icons/fa'
+import { GitButton } from '../components/gitButton'
 
 const WatchMe: React.FC = () => {
     return(
@@ -60,10 +61,7 @@ const WatchMe: React.FC = () => {
                   </DivImageContent>
                   <p>Responsavel pela exibição do conteúdo atravez de uma requisição de uma api, usando como “norte” a SideBar para saber qual genero está selecionado</p>
 
-                  <ButtonGit target="_blank" href="https://github.com/Samuelwps/01-Catalogo-de-filme">
-                    <FaGithub/>
-                    <p>View repository</p>
-                  </ButtonGit>
+                  <GitButton link="https://github.com/Samuelwps/01-Catalogo-de-filme"/>
 
               </ProjectContent>
           </Projectcontent>
