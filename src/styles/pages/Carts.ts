@@ -11,6 +11,8 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 
+color:var(--white);
+
 `
 
 export const ProjectHeader = styled.div`
@@ -142,7 +144,7 @@ background: var(--gitcolor);
 padding:1.3rem;
 border-radius:15px;
 border:none;
-color:white;
+color:var(--white);
 font-size:1.5rem;
 
 p{

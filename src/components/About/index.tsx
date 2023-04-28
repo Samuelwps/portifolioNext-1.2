@@ -11,8 +11,8 @@ export function AboutMe() {
           <h1>SAMUEL RIBEIRO</h1>
           <p>FRONT-END | DEVELOPER</p>
           <Links>
-            <a href="https://www.linkedin.com/in/samuel-r-228093232" target="_blank"><AiOutlineLinkedin className="icons"/></a>
-            <a href="https://www.github.com/Samuelwps" target="_blank"><FaGithub className="icons"/></a>
+            <a href="https://www.linkedin.com/in/samuel-r-228093232" target="_blank"><AiOutlineLinkedin color="var(--white)" className="icons"/></a>
+            <a href="https://www.github.com/Samuelwps" target="_blank"><FaGithub color="var(--white)" className="icons"/></a>
           </Links>
       </Me>
       <About>

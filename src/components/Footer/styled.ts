@@ -9,6 +9,8 @@ export const Container = styled.div`
   height:5rem;
   margin-top:2rem;
 
+  color:var(--white);
+
 `;
 
 export const ContentFooter = styled.div`

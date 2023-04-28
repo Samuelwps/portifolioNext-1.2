@@ -82,6 +82,10 @@ p{
 export const DivCSS = styled.div`
 margin:1rem;
 max-width:50rem;
+
+h4{
+  color:var(--white)
+}
 `
 
 export const SelectedWorks = styled.div`
@@ -162,7 +166,7 @@ export const DivDescription = styled.div`
 
     }
     .iconsProj:hover{
-      color:white;
+      color:var(--white);
 
     }
 
