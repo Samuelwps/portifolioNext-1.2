@@ -10,6 +10,8 @@ display: block;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+
+color: var(--white);
 `;
 
 export const DivContent = styled.div`

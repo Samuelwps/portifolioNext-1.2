@@ -11,6 +11,7 @@ import {
 } from "../styles/pages/Carts"
 
 import { FaGithub } from 'react-icons/fa'
+import { GitButton } from '../components/gitButton/index';
 
 const Cart: React.FC = () => {
     return(
@@ -76,10 +77,8 @@ const Cart: React.FC = () => {
                     </DivImageSummary>
                     <p>removeProduct que vai remover um produto do<br/>inteiro do carrinho.</p>
 
-                    <ButtonGit href="https://github.com/Samuelwps/Carrinho" target="_blank">
-                      <FaGithub/>
-                      <p>View repository</p>
-                    </ButtonGit>
+                    <GitButton link="https://github.com/Samuelwps/Carrinho" />
+
                     </DivSummaryHeader>
             </Projectcontent>
           </main>
