@@ -8,7 +8,7 @@ export function AboutMe() {
     <Container id="about">
       <Me>
           <p>hi i'm</p>
-          <h1>AMUEL RIBEIRO</h1>
+          <h1>MUEL RIBEIRO</h1>
           <p>FRONT-END | DEVELOPER</p>
           <Links>
             <a href="https://www.linkedin.com/in/samuel-r-228093232" target="_blank"><AiOutlineLinkedin className="icons"/></a>
